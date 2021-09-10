@@ -1,0 +1,24 @@
+#Guess the numer
+'''
+Q:- no. of guesses is 9
+    no. guesses he took
+'''
+
+n=20
+print("number of gusses are limited to only 9 ")
+i=1
+while i<=9:
+    guess_number=int(input("guess the no."))
+    if guess_number>20:
+        print("decrease the no.")
+    elif guess_number<20:
+        print("increase the no.")
+    else:
+        print("you won")
+        print(i,"no. gusses he took complete")
+        break
+    print(9-i,"no. of gusses left")
+    i+=1
+if i>9:
+    print("game over")
+    print("try again")
